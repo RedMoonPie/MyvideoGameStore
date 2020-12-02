@@ -1,0 +1,507 @@
+@font-face {
+  font-family: Arcade;
+  src: url("../fonts/ARCADECLASSIC.TTF");
+}
+@font-face {
+  font-family: Arcade2;
+  src: url("../fonts/DEADCRT.ttf");
+}
+
+b {
+  color: #ff0000;
+}
+body {
+  margin: 0;
+}
+
+/* menu bar / color of bar*/
+#float-cart {
+  position: sticky;
+  margin-left: 92vw;
+  z-index: 2;
+  top: 0;
+  background-color: #000000;
+  border-radius: 20px;
+  border-bottom: solid 2px #ff0000;
+  border-right: solid 2px #ff0000;
+}
+#float-cart > button > img {
+  width: 100%;
+  height: 100%;
+}
+
+.float-cartbtn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    background: none;
+    border: none;
+}
+
+.float-cartbtn:hover:after{
+    color: white;
+    content: attr(title);
+    font-family: Arcade;
+    font-size: large;
+    
+}
+.float-cartbtn:hover > img{
+    display: none;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-image: url("../static/background/background5.jpg");
+  background-size: 100% 160%;
+  background-repeat: no-repeat;
+  background-position: 70px 90%;
+  font-family: Arcade;
+  padding-left: 30px;
+  border-bottom: solid 2px rgb(97, 0, 0);
+}
+/* MONSTER GAMES */
+
+.navbar h1 {
+  padding-left: 15px;
+  font-size: 3rem;
+  color: black;
+  text-align: left;
+}
+
+.navbar h1 > img {
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  left: 4.5rem;
+}
+/* Links inside the navbar colors of home /about us / contact us*/
+
+.navbar a {
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  padding: 0px 20px 10px 20px;
+  text-decoration: underline rgb(97, 0, 0);
+}
+/* The dropdown container */
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+/* Dropdown button navbar text ( Nintendo - Playstation - Xbox )   */
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+/* color of background when you hover over navbar */
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: rgb(97, 0, 0);
+}
+/* Dropdown list: color (SNES N64)  */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* color of hovering over drop down list (n64) */
+
+.dropdown-content a:hover {
+  background-color: red;
+}
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* POST SLIDER */
+
+.post-slider {
+  position: relative;
+}
+/* left next button */
+
+.post-slider .next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 2em;
+  color: teal;
+  cursor: pointer;
+}
+/* previous button */
+
+.post-slider .prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2em;
+  color: teal;
+  cursor: pointer;
+}
+
+.post-slider .slider-title {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.post-slider .post-wrapper {
+  width: 84%;
+  height: 450px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+/* background of slider picture */
+
+.post-slider .post-wrapper .post {
+  height: 450px;
+  width: 350px;
+  display: inline-block;
+  border-radius: 5px;
+  background: whitesmoke;
+}
+/* height and width of slider pictures */
+
+.post-slider .post-wrapper .post .slider-image {
+  width: 100%;
+  height: 90%;
+}
+
+h4 {
+  margin-top: 10px;
+  text-align: center;
+}
+/* cart icon pic */
+
+.right img {
+  height: 25px;
+  width: 25px;
+}
+/* START OF PRODUCT PAGE */
+
+.product-page img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 300px;
+  width: 250;
+}
+/* rates 5 stars */
+
+.product-page h2 {
+  margin-top: 50px;
+  margin-left: 150px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-weight: bolder;
+  font-size: 25px;
+}
+/* Game name (Persona 5) */
+
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  text-align: center;
+  color: darkred;
+}
+/* by atlus */
+
+h4 {
+  margin-bottom: 35px;
+  display: block;
+  text-align: center;
+  color: darkred;
+}
+/*stars */
+
+.star-wrapper {
+  position: relative;
+  bottom: 415px;
+  text-align: center;
+  color: orange;
+}
+/* buy now/ new(text) & price buttons */
+
+div.prices {
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  height: 75px;
+}
+/* rating summary pic */
+
+div.sum img {
+  float: right;
+  margin-right: 50px;
+  top: -450px;
+  position: relative;
+  height: 400px;
+}
+/* esrb rating pic */
+
+div.rating img {
+  top: -450px;
+  left: 175px;
+  position: relative;
+  height: 400px;
+}
+/* starting of search results page */
+/* results for header */
+
+.results h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+/* found items */
+
+.results h2 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+/* Platforms Header */
+
+.category-nintendo h1 {
+  position: relative;
+  right: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+/* NINTENDO HEADER */
+
+.category-nintendo h2 {
+  margin-left: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+/* NINTENDO CONSOLES LIST */
+
+.category-nintendo a {
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+/* PLAYSTATION CONSOLES LIST */
+
+.category-playstation a {
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+/* PLAYSTATION HEADER */
+
+.category-playstation h2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+}
+/* XBOX HEADER */
+
+.category-nintendo h2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+}
+/* XBOX CONSOLES LIST */
+
+.category-xbox a {
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.category-xbox h2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 10px;
+}
+/* result images */
+
+.result-images img {
+  position: relative;
+  display: block;
+  height: 300px;
+  width: 250px;
+  top: -555px;
+  right: -825px;
+  margin-bottom: 20px;
+}
+/* persona 5 price button */
+
+.p5 {
+  position: relative;
+  float: right;
+  top: -850px;
+  right: 500px;
+}
+/* final fantasy X price / button */
+
+.ffx {
+  position: relative;
+  float: right;
+  top: -850px;
+  right: 500px;
+}
+/* trials of mana price / button */
+
+.mana {
+  position: relative;
+  float: right;
+  top: -850px;
+  right: 500px;
+}
+/* $price */
+
+.p5 label {
+  position: relative;
+  right: -25px;
+}
+/* radio circle */
+
+.p5 input {
+  position: relative;
+  right: -30px;
+}
+/* add to cart button */
+
+.p5 button {
+  position: relative;
+  right: -25px;
+}
+/* $price */
+
+.ffx label {
+  position: relative;
+  right: -25px;
+}
+/* radio circle */
+
+.ffx input {
+  position: relative;
+  right: -30px;
+}
+/* add to cart button */
+
+.ffx button {
+  position: relative;
+  right: -25px;
+}
+/* $price */
+
+.mana label {
+  position: relative;
+  right: -25px;
+}
+/* radio circle */
+
+.mana input {
+  position: relative;
+  right: -30px;
+}
+/* add to cart button */
+
+.mana button {
+  position: relative;
+  right: -25px;
+}
+
+/* Search Bar*/
+
+.search-container {
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.search-container > form {
+  position: relative;
+  transition: all 1s;
+  width: 1100px;
+  height: 100px;
+  background: rgb(255, 0, 0);
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 4px solid white;
+  padding: 5px;
+  margin-left: 8vw;
+}
+
+.search-container > form > input {
+  position: absolute;
+  width: 960px;
+  height: 80px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: block;
+  font-size: 1em;
+  border-radius: 20px;
+  border: solid 1px red;
+  padding: 0 20px;
+}
+
+.search-container > form > button > .fa {
+  box-sizing: border-box;
+  padding-top: 1.3rem;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 3rem;
+  transition: all 1s;
+}
+
+.search-container > form > button {
+  background: none;
+  border: none;
+}
+.search-container > form > button :hover {
+  padding-top: 2rem;
+  font-size: 1.8rem;
+}
+.search-container > form > button :hover:after {
+  color: white;
+  content: attr(title);
+}
+
+.search-container > form:hover {
+  cursor: pointer;
+}
+
+.search-container > form:hover > .fa {
+  color: rgb(255, 255, 255);
+}
+.search-title {
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 3rem;
+  font-family: Arcade;
+  text-align: center;
+}
+
+/* seach bar */

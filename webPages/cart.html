@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/cart.css" />
+</head>
+
+<body>
+    <!------------------------------------Header------------------------------------>
+
+    <div class="navbar">
+        <h1>M &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp nster Games <img src="../assets/static/logos/logo.jpg" /></h1>
+        <a href="../index.html">Home</a>
+        <a href="../webPages/productpage.html">Products</a>
+        <a href="#">About Us</a>
+
+        <a href="#">Contact Us</a>
+
+        <a href="#"> Sign Up</a>
+
+
+    </div>
+
+    <div title="My cart" id="float-cart">
+        <button onclick="window.location.href='../webPages/cart.html'" class="float-cartbtn" title="My cart"> <img src="../assets/static/red-cart.png" /></button>
+    </div>
+
+
+    <!------------------------------------Cart------------------------------------>
+    <div class="cart">
+
+    </div>
+    <script src="../assets/scripts/addTosCart.js"></script>
+    <script src="../assets/scripts/data.js"></script>
+    <script src="../assets/scripts/getCartItems.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>

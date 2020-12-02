@@ -1,0 +1,41 @@
+.console{
+    position: absolute;
+    right: 15%;
+    top : 110% ;
+}
+.console-select{
+    position: absolute;
+    top : 110% ;
+    right: 5%;
+}
+.genre{
+    position: absolute;
+    right: 40%;
+    top : 110% ;
+
+}
+.genre-select{
+    position: absolute;
+    top : 110% ;
+    right: 30%;
+}
+.price{
+    position: absolute;
+    right: 63%;
+    top : 110% ;
+}
+.price-select{
+    position: absolute;
+    top : 110% ;
+    right: 53%;
+}
+.alphabetic{
+    position: absolute;
+    right: 78%;
+    top : 110% ;
+}
+.alphabetic-select{
+    position: absolute;
+    top : 110% ;
+    right: 74%;
+}

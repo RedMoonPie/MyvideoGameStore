@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Monster Games</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/slider.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/searchFilter.css" />
+</head>
+
+<body>
+    <!------------------------------------Header------------------------------------>
+
+    <div class="navbar">
+        <h1>M &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp nster Games <img src="./assets/static/logos/logo.jpg" /></h1>
+        <a href="index.html">Home</a>
+        <a href="./webPages/productpage.html">Products</a>
+        <a href="./webPages/about.html">About Us</a>
+
+        <a href="./webPages/contactus.html">Contact Us</a>
+
+        <a href="./webPages/signup.html"> Sign Up</a>
+
+
+    </div>
+
+    <div title="My cart" id="float-cart">
+        <button onclick="window.location.href='./webPages/cart.html'" class="float-cartbtn" title="My cart"> <img src="./assets/static/red-cart.png" /></button>
+    </div>
+
+    <!------------------------------------Header------------------------------------>
+
+    <!------------------------------------SearchBar------------------------------------>
+
+    <div class="search-title"> <b>What</b> Are <b>You</b> looking <b>For</b> ? ! </div>
+
+    <div class="search-container">
+        <form action="./webPages/searchresultspage.html" method="GET">
+            <input type="text" placeholder="Search.." name="search" />
+            <button title="GO" type="submit"><i title="GO" class="fa fa-search"></i></button>
+
+            <label class="console" for="console">Filter by Console:</label>
+
+            <select class="console-select" name="console" id="console">
+                        <option value=" "></option>
+                        <option value="NES">NES</option>
+                        <option value="SNES">SNES</option>
+                        <option value="Nintendo64">N64</option>
+                        <option value="Gamecube">GameCube</option>
+                        <option value="Wii">Wii</option>
+                        <option value="Switch">Switch</option>
+                        <option value="PS1">PS1</option>
+                        <option value="PS2">PS2</option>
+                        <option value="PS3">PS3</option>
+                        <option value="PS4">PS4</option>
+                        <option value="xbox">Xbox Original</option>
+                        <option value="xbox 360">Xbox 360</option>
+                        <option value="xbox one">Xbox One</option>
+                    </select>
+            <label class="genre" for="genre">Filter by Genre :</label>
+
+            <select class="genre-select" name="genre" id="genre">
+                        <option value=" "></option>
+                        <option value="RPG">RPG</option>
+                        <option value="Platformer">Platformer</option>
+                        <option value="Action">Action</option>
+                        <option value="Racing">Racing</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Puzzle">Puzzle</option>
+                        <option value="Party">Party</option>
+                        <option value="ShootEmUp">ShootEmUp</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Fighting">Fighting</option>
+                        <option value="Survival">Survival</option>
+                        <option value="Sports">Sports</option>
+                        <option value="FPS">FPS</option>
+                        
+                    
+                    </select>
+            <label class="price" for="price">Sort by price:</label>
+
+            <select class="price-select" name="price" id="price">
+                        <option value=" "></option>
+                        <option value="cheap">Cheapest</option>
+                        <option value="expensive">Highest Price</option>
+                        
+                    </select>
+
+            <label class="alphabetic" for="alphabetic">Sort by Alphabetic Order :</label>
+
+            <select class="alphabetic-select" name="alphabetic" id="alphabetic">
+                      <option value=" "></option>
+                        <option value="A_Z">A/Z</option>
+                        <option value="Z_A">Z/A</option>
+                    
+                    </select>
+
+        </form>
+    </div>
+
+    <!------------------------------------SearchBar------------------------------------>
+
+    <!------------------------------------Carousel------------------------------------>
+
+    <h2 class="slider_title"> DO NOT MISS OUR MONSTER DEALS ! </h2>
+    <div class="slideshow-container " id="slider_container">
+
+    </div>
+    <br>
+
+    <div style="text-align:center" id="dot">
+
+    </div>
+
+
+
+    <!------------------------------------Carousel------------------------------------>
+
+    <!------------------------------------Footer------------------------------------>
+
+    <!------------------------------------Footer------------------------------------>
+
+    <script src="./assets/scripts/addTosCart.js"></script>
+    <script src="https://kit.fontawesome.com/114c24bcad.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/data.js"></script>
+    <script src="./assets/scripts/featuredSlider.js"></script>
+    <script src="./assets/scripts/slider.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
